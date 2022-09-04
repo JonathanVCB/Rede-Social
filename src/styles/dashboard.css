@@ -312,6 +312,7 @@ body {
   padding: 2rem 0;
   width: 90%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .header_modal > img {
   height: 52px;
