@@ -94,7 +94,7 @@ body {
   transition: 0.7s;
 }
 .main_form > #back:hover {
-  background-color: #edf2ff;
+  background-color: var(--white-1-btn);
   color: var(--brand-1);
 }
 .main_form > h1 {

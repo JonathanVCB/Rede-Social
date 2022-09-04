@@ -29,7 +29,12 @@ class Homepage {
 
     nameUser.innerText = user.username;
     workUser.innerText = user.work_at;
-    followersUser.innerText = user.followers_amount;
+
+    if (user.followers_amount < 2) {
+      followersUser.innerText = `${user.followers_amount} seguidor`;
+    } else {
+      followersUser.innerText = `${user.followers_amount} seguidores`;
+    }
 
     divInfos.append(nameUser, workUser);
     divUser.append(imgUser, divInfos, followersUser);

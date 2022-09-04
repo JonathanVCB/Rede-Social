@@ -149,4 +149,8 @@ table {
   --like: #d7443e;
   /*background Body */
   --background: #f8f9fa;
+
+  /*background buttons */
+  --black-1-btn: #0a0c0d;
+  --white-1-btn: #edf2ff;
 }

@@ -116,6 +116,12 @@ body {
   font-size: 0.875rem;
   font-weight: 600;
   margin-left: 70%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.form_container #post:hover {
+  background-color: var(--white-1-btn);
+  color: var(--brand-1);
 }
 .sugestion_container {
   padding-top: 2rem;
@@ -179,6 +185,10 @@ body {
   border: 1px solid var(--grey1);
   border-radius: 2px;
   cursor: pointer;
+}
+.sugestion_list > li > span:hover {
+  background-color: #edf2ff;
+  color: var(--brand-1);
 }
 .main_container {
   width: 90%;
@@ -247,6 +257,11 @@ body {
   border-radius: 4px;
   color: var(--white);
   padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.post_footer > button:hover {
+  background-color: var(--black-1-btn);
 }
 .post_list_like {
   display: flex;
@@ -257,7 +272,10 @@ body {
   width: 22.76px;
   height: 20px;
   font-size: 1.4rem;
-  color: grey;
+  cursor: pointer;
+}
+.post_list_like > i:hover {
+  color: var(--like);
 }
 .post_list_like > p {
   font-size: 0.875rem;
