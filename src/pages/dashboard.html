@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header_container">
+      <div class="header_image">
+        <img src="../assets/logo.png" alt="Logo" />
+      </div>
+      <button id="logout">Sair</button>
+    </header>
+
+    <div class="top_container">
+      <section class="container">
+        <div class="profile_container">
+          <!-- <img src="../assets/profile.png" alt="profile" />
+          <div class="profile_infos">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer</p>
+          </div>
+          <span>565 seguidores</span> -->
+        </div>
+
+        <form class="form_container">
+          <input
+            id="titlePost"
+            type="text"
+            placeholder="Digitar título do post"
+          />
+          <input
+            id="descPost"
+            type="text"
+            placeholder="Digitar descrição do post"
+          />
+          <button id="post">Postar</button>
+        </form>
+      </section>
+
+      <section class="sugestion_container">
+        <h2>Sugestões para você seguir</h2>
+        <ul class="sugestion_list">
+          <!-- <li>
+            <div class="list_profile_container">
+              <img src="../assets/profile.png" alt="profile" />
+              <div class="list_info">
+                <h3>Carlos Lima</h3>
+                <p>UX e UI Desginer</p>
+              </div>
+            </div>
+            <span>Seguindo</span>
+          </li> -->
+        </ul>
+      </section>
+    </div>
+
+    <main class="main_container">
+      <h2>Posts</h2>
+      <ul class="main_container_posts">
+        <!-- <li>
+          <div class="container_profile_list">
+            <img src="../assets/profile.png" alt="profile" />
+            <div class="post_profile_info_list">
+              <h3>Carlos Lima</h3>
+              <p>UX e UI Desginer</p>
+            </div>
+          </div>
+
+          <h3>
+            Como criar um interface simples e agradável utilizando boas práticas
+            de design
+          </h3>
+          <p>
+            Hoje vamos conversar sobre como criar uma interface agradável mesmo
+            sem ter um design pronto feito por um profissional de UI design.
+          </p>
+
+          <div class="post_footer">
+            <button id="openPost">Abrir Post</button>
+
+            <div class="post_list_like">
+              <i class="fas fa-heart"></i>
+              <p>25</p>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </main>
+
+    <!-- <section class="backgound_modal">
+      <div>
+        <header class="header_modal">
+          <img src="../assets/profile.png" alt="" />
+          <div class="header_modal_info">
+            <h3>Carla Maria</h3>
+            <p>Back end Engineer</p>
+          </div>
+          <button id="close">X</button>
+        </header>
+
+        <div class="modal_post">
+          <h2>
+            Como melhorar sua lógica de programação? Desenvolvemos 5 passos para
+            te ajudar
+          </h2>
+          <p>
+            Para quem está começando na área de T.I, em pleno século 21 este
+            conceito pode parecer um grande desafio, pois requer muitas
+            habilidades em diversas áreas de estudo, principalmente lógica Como
+            já informado, algoritmos são um conjunto de passos definidos para
+            gerar um resultado. Aprender o conceito de instruções simples é a
+            primeira etapa para compreender lógica de programação. No seu dia a
+            dia você já aplicou um algoritmo e não percebeu. Como exemplo temos
+            a instrução “escovar os dentes”: - Pegar escova; - Ligar torneira -
+            Limpar escova; - Fechar torneira; - Colocar pasta na escova; -
+            Escovar os dentes;
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- AREA DE SCRIPTS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../js/dashboard.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b4079cac5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

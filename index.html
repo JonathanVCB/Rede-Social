@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
     <title>Rede Social</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header_container">
+      <div class="header_image">
+        <img src="./src/assets/logo.png" alt="Logo" />
+      </div>
+      <nav class="header_nav_container">
+        <ul>
+          <li id="loginModal">Login</li>
+          <li id="registerModal">Registro</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- <main class="main_container">
+        <form class="main_form">
+          <h1>Cadastro</h1>
+          <button id="back">Voltar</button>
+          <input id="nameInput" type="text" placeholder="Seu nome" />
+          <input id="emailInput" type="email" placeholder="Seu e-mail" />
+          <input id="passInput" type="password" placeholder="Sua senha" />
+
+          <input
+            id="workInput"
+            type="text"
+            placeholder="Qual o seu trabalho?"
+          />
+          <input
+            id="avatarInput"
+            type="text"
+            placeholder="URL da imagem de perfil"
+          />
+          <button id="register" type="submit">Registrar</button>
+          <span>Já possui login?</span>
+          <button id="goLogin" type="submit">Ir para página de login</button>
+        </form>
+      </main> -->
+
+      <main class="main_container">
+        <form class="main_form">
+          <h1>Login</h1>
+          <input id="emailInput" type="email" placeholder="Seu e-mail" />
+          <input id="passInput" type="password" placeholder="Sua senha" />
+          <button id="login" type="submit">Logar</button>
+          <span>Ainda não possui cadastro</span>
+          <button id="goRegister" type="submit">
+            Ir para página de registro
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <!-- AREA DE SCRIPTS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
 </html>
