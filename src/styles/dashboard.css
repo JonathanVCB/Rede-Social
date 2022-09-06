@@ -176,6 +176,9 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--grey2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .sugestion_list > li > span {
   font-size: 0.875rem;

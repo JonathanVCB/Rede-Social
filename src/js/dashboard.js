@@ -111,7 +111,7 @@ class Homepage {
       iconLike.style.color = "grey";
     }
 
-    likes.addEventListener("click", () => {
+    iconLike.addEventListener("click", () => {
       if (iconLike.style.color == "grey") {
         iconLike.style.color = "red";
 

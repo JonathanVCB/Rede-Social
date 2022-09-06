@@ -17,11 +17,11 @@ export class Requests {
       })
       .catch((err) => {
         if (err.response.data.email) {
-          Toast.create(`Email: ${err.response.data.email}`, "red");
+          Toast.create(`Email: espaço invalido`, "red");
         } else if (err.response.data.password) {
-          Toast.create(`Password: ${err.response.data.password}`, "red");
+          Toast.create(`Senha: espaço invalido`, "red");
         } else if (err.response.data.non_field_errors) {
-          Toast.create(err.response.data.non_field_errors, "red");
+          Toast.create("Email ou senha invalidos", "red");
         }
 
         console.log(err);
@@ -41,18 +41,15 @@ export class Requests {
       })
       .catch((err) => {
         if (err.response.data.email) {
-          Toast.create(`Email: ${err.response.data.email}`, "red");
+          Toast.create(`Email: espaço invalido`, "red");
         } else if (err.response.data.image) {
-          Toast.create(`Image: ${err.response.data.image}`, "red");
+          Toast.create(`Image: espaço invalido`, "red");
         } else if (err.response.data.password) {
-          Toast.create(`Senha: ${err.response.data.password}`, "red");
+          Toast.create(`Senha: espaço invalido`, "red");
         } else if (err.response.data.username) {
-          Toast.create(`Seu Nome: ${err.response.data.username}`, "red");
+          Toast.create(`Seu Nome: espaço invalido`, "red");
         } else if (err.response.data.work_at) {
-          Toast.create(
-            `Qual seu trabalho: ${err.response.data.work_at}`,
-            "red"
-          );
+          Toast.create(`Qual seu trabalho: espaço invalido`, "red");
         }
         console.log(err);
       });
