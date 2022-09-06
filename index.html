@@ -17,6 +17,8 @@
     />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/inputs.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
 
     <title>Rede Social</title>
   </head>
@@ -60,8 +62,18 @@
       <main class="main_container">
         <form class="main_form">
           <h1>Login</h1>
-          <input id="emailInput" type="email" placeholder="Seu e-mail" />
-          <input id="passInput" type="password" placeholder="Sua senha" />
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="Seu e-mail"
+            required
+          />
+          <input
+            id="passInput"
+            type="password"
+            placeholder="Sua senha"
+            required
+          />
           <button id="login" type="submit">Logar</button>
           <span>Ainda não possui cadastro</span>
           <button id="goRegister" type="submit">

@@ -16,7 +16,14 @@ export class Requests {
         console.log(res);
       })
       .catch((err) => {
-        Toast.create(err.message, "red");
+        if (err.response.data.email) {
+          Toast.create(`Email: ${err.response.data.email}`, "red");
+        } else if (err.response.data.password) {
+          Toast.create(`Password: ${err.response.data.password}`, "red");
+        } else if (err.response.data.non_field_errors) {
+          Toast.create(err.response.data.non_field_errors, "red");
+        }
+
         console.log(err);
       });
 
@@ -33,7 +40,20 @@ export class Requests {
         }, 1500);
       })
       .catch((err) => {
-        Toast.create(err.message, "red");
+        if (err.response.data.email) {
+          Toast.create(`Email: ${err.response.data.email}`, "red");
+        } else if (err.response.data.image) {
+          Toast.create(`Image: ${err.response.data.image}`, "red");
+        } else if (err.response.data.password) {
+          Toast.create(`Senha: ${err.response.data.password}`, "red");
+        } else if (err.response.data.username) {
+          Toast.create(`Seu Nome: ${err.response.data.username}`, "red");
+        } else if (err.response.data.work_at) {
+          Toast.create(
+            `Qual seu trabalho: ${err.response.data.work_at}`,
+            "red"
+          );
+        }
         console.log(err);
       });
     return userRegister;

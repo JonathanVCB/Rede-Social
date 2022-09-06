@@ -36,26 +36,8 @@ body {
   width: 100%;
 }
 
-.header_nav_container > ul > li:nth-child(1) {
-  background-color: var(--grey2);
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  font-weight: 400;
-  cursor: pointer;
-  transition: 0.7s;
-}
 .header_nav_container > ul > li:hover {
   background-color: var(--grey3);
-}
-.header_nav_container > ul > li:nth-child(2) {
-  color: var(--grey4);
-  padding: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: 0.7s;
 }
 
 .container {
@@ -80,103 +62,19 @@ body {
   padding: 0 1rem;
   position: relative;
 }
-.main_form > #back {
-  position: absolute;
-  right: 1.3rem;
-  top: 1rem;
-  padding: 0.3rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--grey1);
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  cursor: pointer;
-  transition: 0.7s;
-}
-.main_form > #back:hover {
-  background-color: var(--white-1-btn);
-  color: var(--brand-1);
-}
+
 .main_form > h1 {
   padding-top: 1rem;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--black);
 }
-.main_form > input {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 2px solid #dee2e6;
-}
-.main_form > input::placeholder {
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--grey2);
-}
-.main_form > input:focus {
-  outline: none;
-  border: 2px solid var(--brand-1);
-}
-.main_form > #login {
-  background-color: var(--brand-1);
-  color: var(--white);
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: 0.7s;
-}
-.main_form > #login:hover {
-  transform: scale(1.05);
-}
-.main_form > #register {
-  background-color: var(--brand-1);
-  color: var(--white);
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: 0.7s;
-}
-.main_form > #register:hover {
-  transform: scale(1.05);
-}
-.main_form > input:focus {
-  border: 2px solid var(--brand-1);
-}
+
 .main_form > span {
   text-align: center;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--black);
-}
-.main_form > #goRegister {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--grey1);
-  background-color: var(--white);
-  border-radius: 2px;
-  padding: 0.5rem;
-  border: 1px solid var(--grey1);
-  cursor: pointer;
-  transition: 0.7s;
-}
-.main_form > #goRegister:hover {
-  background-color: #edf2ff;
-  color: var(--brand-1);
-}
-.main_form > #goLogin {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--grey1);
-  background-color: var(--white);
-  border-radius: 2px;
-  padding: 0.5rem;
-  border: 1px solid var(--grey1);
-  cursor: pointer;
-  transition: 0.7s;
-}
-.main_form > #goLogin:hover {
-  background-color: #edf2ff;
-  color: var(--brand-1);
 }
 
 @media (min-width: 750px) {
@@ -191,15 +89,6 @@ body {
     padding: 0px 1.3rem;
     gap: 2.5rem;
   }
-  .main_form > #goRegister {
-    padding: 0.7rem;
-  }
-  .main_form > #login {
-    padding: 0.7rem;
-  }
-  .main_form > input {
-    padding: 0.7rem;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -212,15 +101,6 @@ body {
     height: 100%;
     gap: 3rem;
   }
-  .main_form > #goRegister {
-    padding: 0.8rem;
-  }
-  .main_form > #login {
-    padding: 0.8rem;
-  }
-  .main_form > input {
-    padding: 0.8rem;
-  }
 }
 
 @media (min-width: 1500px) {
@@ -230,14 +110,5 @@ body {
   .main_form {
     padding: 2rem 5rem;
     gap: 3rem;
-  }
-  .main_form > #goRegister {
-    padding: 1rem;
-  }
-  .main_form > #login {
-    padding: 1rem;
-  }
-  .main_form > input {
-    padding: 1rem;
   }
 }
