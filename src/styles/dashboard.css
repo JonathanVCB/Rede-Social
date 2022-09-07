@@ -162,7 +162,9 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-
+.list_info {
+  width: 150px;
+}
 .list_info > h3 {
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
